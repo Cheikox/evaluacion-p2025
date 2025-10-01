@@ -5,18 +5,58 @@ html {
 }
 
 *,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+*:before
 
 body {
   font-size: 1.6rem;
+  background-image: url(/index/img/background.jpg);
+  position: fixed;
 }
 
 img {
   max-width: 100%;
 }
 
+/*INICIO HEADER Y NAVBAR*/
 
+.header-navbar{
+  background-color: black;
+}
+
+.title-nav{
+  color: white;
+  font-size: 4.5rem;
+}
+
+.items-nav{
+  color: white;
+  font-size: 4.5rem;
+}
+
+/*FIN HEADER Y NAVBAR*/
+
+/*INICIO NUESTROS PRODUCTOS*/
+
+.nuestros-productos{
+  background-color: white;
+}
+
+.nuestros-productos h2{
+
+}
+
+/*FIN NUESTROS PRODUCTOS*/
+
+/*INICIO FOOTER*/
+
+.footer{
+  background-color: black;
+}
+
+.card-footer{
+  display: flex;
+}
+
+
+/*FIN FOOTER*/
 
