@@ -4,13 +4,28 @@ html {
   font-size: 62.5%;
 }
 
-*,
-*:before
+*, *:before, ::after {box-sizing: inherit; }
 
 body {
+  margin: 0;
   font-size: 1.6rem;
-  background-image: url(/index/img/background.jpg);
-  position: fixed;
+  background-image: url(/index/img/background.jpg),url(/index/img/background.jpg);
+  background-repeat: repeat-y, repeat-y;
+  background-position: left top, right top;
+  background-size: 18rem auto, 18rem auto;
+  background-attachment: fixed, fixed;
+  background-color:white;
+}
+
+
+.nuestros-productos,
+.blog,
+.sobre-nosotros,
+.contacto,
+.footer {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
 }
 
 img {
@@ -20,32 +35,154 @@ img {
 /*INICIO HEADER Y NAVBAR*/
 
 .header-navbar{
-  background-color: black;
+  background-color: #000;
+  border-bottom: 1px solid #222;
+  max-width: 1153px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .title-nav{
-  color: white;
+  color: #fff;
   font-size: 4.5rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .items-nav{
-  color: white;
-  font-size: 4.5rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
 }
+
+.items-nav a{
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  padding: .5rem 0;
+}
+
+.items-nav a:hover{
+  border-bottom: 1px solid #fff;
+}
+
+
 
 /*FIN HEADER Y NAVBAR*/
 
 /*INICIO NUESTROS PRODUCTOS*/
 
 .nuestros-productos{
-  background-color: white;
+  background-color: #fff;
+  padding: 2rem;
 }
 
 .nuestros-productos h2{
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-top: 2rem;
+}
 
+.productos-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.card-producto{
+  flex: 1 1 calc(25% - 0.5rem);
+  background: #fafafa;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: .5rem;
+}
+
+.card-producto img{
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card-producto h3{
+  font-size: 1.8rem;
+  margin-top: .5rem;
+}
+
+.card-producto p{
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+
+.precio{
+  font-weight: bold;
+  color: #000;
 }
 
 /*FIN NUESTROS PRODUCTOS*/
+
+/*INICIO MAS VENDIDOS*/
+
+.productos-layout{
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.productos-area{
+  flex-basis: 75%;
+}
+
+.aside-vendidos{
+  flex-basis: 25%;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: .5rem;
+}
+
+.aside-vendidos h3{
+  margin: 0 0 1rem 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.vendidos-lista{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vendido-item{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .8rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.vendido-item img{
+  width: 5rem;
+  height: 7rem;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.vendido-item span{
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/*FIN MAS VENDIDOS*/
 
 /*INICIO FOOTER*/
 
@@ -60,3 +197,117 @@ img {
 
 /*FIN FOOTER*/
 
+/*INICIO BLOG*/
+
+.blog{
+  background-color: white;
+  padding: 2rem;
+}
+
+.blog h2{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.blog-card{
+  display: flex;
+  background-color: lightcyan;
+  border-radius: .9rem;
+  height: 40rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.blog-img{
+  flex-basis: 20%;
+}
+
+.blog-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-body{
+  flex-basis: 80%;
+  padding: 4rem;
+}
+
+.blog-body h3{
+  margin-bottom: 1rem;
+}
+
+.blog-body p{
+  margin-bottom: 1rem;
+}
+
+.blog-meta{
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/*FIN BLOG*/
+
+/*INICIO SOBRE NOSOTROS*/
+
+.sobre-nosotros{
+  background-color: white;
+  text-align: center;
+  max-width: 80rem;
+  margin: 0 auto 4rem;
+  padding: 2rem;
+}
+
+.sobre-nosotros p{
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+/*FIN SOBRE NOSOTROS*/
+
+/*INICIO CONTACTO*/
+
+.contacto{
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contacto form{
+  display: flex;
+  flex-direction: column;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contacto label{
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.contacto input, .contacto textarea{
+  padding: 1rem;
+  font-size: 1.6;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+}
+
+.contacto button{
+  margin-top: 2rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+.contacto button:hover{
+  background-color: #333;
+}
+
+/*FIN CONTACTO*/
