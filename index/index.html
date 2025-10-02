@@ -12,7 +12,8 @@
 </head>
 
 <body>
-  <!--Inicio header-->
+  <!--Inicio header/navbar-->
+
   <section class="header-navbar">
     <a class="title-nav" href="#">MANGASTORE</a>
     <ul class="items-nav">
@@ -23,72 +24,134 @@
     </ul>
   </section>
 
-  <!--Fin he-->
+  <!--Fin header/navbar-->
 
   <!--Inicio Nuestros Productos-->
 
   <section class="nuestros-productos">
     <h2>Nuestros Productos</h2>
+    <div class="productos-layout">
+      <div class="productos-area">
+        <div class="productos-grid">
 
-    <img src="img/manga1.jpg" alt="Portada Demon Slayer Vol. 1">
-  
-    <h3>Demon Slayer - Vol. 1</h3>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus maiores sit facilis explicabo earum
-      non
-      eligendi, a perferendis blanditiis iure, quisquam nihil omnis nulla autem expedita adipisci illo
-      delectus
-      aut?</p>
-    <p>$99999</p>
-  
-  
-  
-    <h2>Mangas más vendidos</h2>
-    <ul>
-      <li>
-        <img src="img/manga1.jpg" alt="manga vendido">
-        <span>Demon Slayer - Vol. 1</span>
-      </li>
-      <li class="card">
-        <img src="img/manga2.jpg" alt="manga vendido">
-        <span>Blue Period - Vol. 6</span>
-      </li>
-      <li class="card">
-        <img src="img/manga3.webp" alt="manga vendido">
-        <span>Jujutsu Kaisen - Vol. 1</span>
-      </li>
-      <li class="card">
-        <img src="img/manga4.jpg" alt="manga vendido">
-        <span>Vagabond - Vol. 37</span>
-      </li>
-    </ul>
-  
-  </section>
+          <div class="card-producto">
+            <img src="img/manga1.jpg" alt="Demon Slayer - Vol. 1">
+            <h3>Demon Slayer - Vol. 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p class="precio">$99999</p>
+          </div>
+
+          <div class="card-producto">
+            <img src="img/manga2.jpg" alt="Blue Period - Vol. 6">
+            <h3>Blue Period - Vol. 6</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p class="precio">$99999</p>
+          </div>
+
+          <div class="card-producto">
+            <img src="img/manga3.webp" alt="Jujutsu Kaisen - Vol. 1">
+            <h3>Jujutsu Kaisen - Vol. 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p class="precio">$99999</p>
+          </div>
+
+          <div class="card-producto">
+            <img src="img/manga4.jpg" alt="Vagabond - Vol. 37">
+            <h3>Vagabond - Vol. 37</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p class="precio">$99999</p>
+          </div>
+
+        </div>
+      </div>
 
   <!--Fin Nuestros Productos-->
 
+  <!--Inicio Mas Vendidos-->
+  
+      <aside class="aside-vendidos">
+        <h3>Mangas más vendidos</h3>
+
+        <ul class="vendidos-lista">
+
+          <li class="vendido-item">
+            <img src="img/manga1.jpg" alt="Demon Slayer - Vol. 1">
+            <span>Demon Slayer - Vol. 1</span>
+          </li>
+
+          <li class="vendido-item">
+            <img src="img/manga2.jpg" alt="Blue Period - Vol. 6">
+            <span>Blue Period - Vol. 6</span>
+          </li>
+
+          <li class="vendido-item">
+            <img src="img/manga3.webp" alt="Jujutsu Kaisen - Vol. 1">
+            <span>Jujutsu Kaisen - Vol. 1</span>
+          </li>
+
+          <li class="vendido-item">
+            <img src="img/manga4.jpg" alt="Vagabond - Vol. 37">
+            <span>Vagabond - Vol. 37</span>
+          </li>
+
+        </ul>
+
+      </aside>
+    </div>
+  </section>
+
+  <!--Fin Mas Vendidos-->
+
   <!--Inicio Blog-->
 
-  <section class="blog">
-    <h2>blog</h2>
+<section class="blog">
+  <h2>Blog</h2>
 
-    <img src="img/blog1.jpg" alt="blog cover">
+    <article class="blog-card">
+      <div class="blog-img">
+        <img src="img/blog1.jpg" alt="Slam Dunk portada">
+      </div>
+
+      <div class="blog-body">
+        <h3>Slam Dunk</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste
+          distinctio, quidem, consequuntur, repellat eaque esse voluptatum sed
+          molestias tempora pariatur? Vel nemo consequuntur placeat quo beatae ipsa
+          natus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+          dolorum fugit dolor dolore, amet corporis sit explicabo distinctio doloribus
+          fuga magnam cum autem.
+        </p>
+        <p class="blog-meta">
+          Por Pes Palotes<br>
+          <br>
+          <time datetime="2025-09-20">20/09/2025</time>
+        </p>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <div class="blog-img">
+        <img src="img/blog1.jpg" alt="Slam Dunk portada">
+      </div>
+
+      <div class="blog-body">
+        <h3>Slam Dunk</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste
+          distinctio, quidem, consequuntur, repellat eaque esse voluptatum sed
+          molestias tempora pariatur?
+        </p>
+        <p class="blog-meta">
+          Por Maria Las Petunias <br>
+          <br>
+          <time datetime="2025-09-20">20/09/2025</time>
+        </p>
+      </div>
+    </article>
+
   
-    <h3>Slam dunk</h3>
-    <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste distinctio, quidem,
-      consequuntur,
-      repellat eaque esse voluptatum sed molestias tempora pariatur? Vel nemo consequuntur placeat quo beatae ipsa
-      natus eius!
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolorum fugit dolor dolore, amet corporis sit
-      explicabo distinctio doloribus fuga magnam cum autem, aspernatur, enim quasi porro ducimus consequatur quas?
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium doloribus ducimus veritatis sint
-      animi? Eaque debitis reprehenderit hic facere dolorem voluptatem, pariatur quo numquam nostrum ducimus
-      dicta? Quo, facilis quisquam.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate impedit vitae commodi non id optio
-      corrupti ipsa, temporibus a quisquam quam eaque aspernatur. Nam sequi ad molestias soluta? Quidem, earum?
-    </blockquote>
-    <p>Por Pes Palotes</p>
-    <time datetime="2025-09-20">20/09/2025</time>
-  </section>
+</section>
 
     <!-- Fin Blog -->
 
